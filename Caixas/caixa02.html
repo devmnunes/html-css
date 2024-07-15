@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags </title>
+    <style>
+
+        h1 {
+            font-size: 50px;
+            height: 50px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: cadetblue;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+         
+        }
+
+        nav {
+            background-color: cadetblue;
+            padding: 3px;
+            box-shadow: 2px 2px  4px 1px rgba(0, 0, 0, 0.315);
+            border-radius: 5px;
+        }
+
+        a {
+            text-align: end;
+            margin: 15px;
+        }
+
+        nav > a {
+        
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        article {
+            background-color: lightgrey;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(87, 87, 87);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Meu site</h1>
+        <nav>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Tecnologia Política</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro autem, tenetur sint aut hic odio atque enim, sapiente, mollitia eius fugit. Reiciendis assumenda deleniti voluptates perspiciatis, exercitationem possimus nobis voluptate.</p>
+                <aside>
+                    <p>Artigo Escrito por Matheus</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Matheus</p>
+    </footer>
+</body>
+
+</html>
