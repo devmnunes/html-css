@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /* CONFIG PARA O CABEÇALHO FIXO*/
         }
 
         td,th {
@@ -25,10 +25,26 @@
             text-align: right;
         }
 
-        thead,
-        tfoot {
-            background-color: grey;
+        thead, tfoot {
+            background-color: rgb(62, 62, 62);
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky; /* CONFIG PARA O CABEÇALHO FIXO*/
+            top: 0; /* CONFIG PARA O CABEÇALHO FIXO*/
+            background-color: rgb(62, 62, 62);
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: grey;
+
+        }
+
+        caption {
+            background-color: black;
+            color: white;
+            padding: 10px;
         }
     </style>
 </head>
@@ -48,10 +64,13 @@
     -->
 
     <table>
+        <caption>
+            População das Unidades Federatrivas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
@@ -194,7 +213,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>215.300,512</strong></td>
             </tr>
         </tfoot>
